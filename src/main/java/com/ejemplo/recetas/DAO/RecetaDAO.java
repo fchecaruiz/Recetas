@@ -1,4 +1,4 @@
-package com.ejemplo.recetas;
+package com.ejemplo.recetas.DAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,6 +7,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.ejemplo.recetas.entidades.Dificultad;
+import com.ejemplo.recetas.entidades.Receta;
 
 public class RecetaDAO {
 

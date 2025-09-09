@@ -1,4 +1,4 @@
-package com.ejemplo.recetas;
+package com.ejemplo.recetas.entidades;
 
 public class Dificultad {
     private int id;
