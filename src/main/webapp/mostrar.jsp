@@ -15,24 +15,26 @@
         <p>No hay recetas para mostrar.</p>
       </c:when>
       <c:otherwise>
-        <table>
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Nombre</th>
-              <th>Dificultad</th>
-            </tr>
-          </thead>
-          <tbody>
-            <c:forEach var="receta" items="${recetas}">
+        <div class="table-wrap">
+          <table>
+            <thead>
               <tr>
-                <td><c:out value="${receta.id}" /></td>
-                <td><c:out value="${receta.nombre}" /></td>
-                <td><c:out value="${not empty receta.dificultad ? receta.dificultad : 'Sin dificultad'}" /></td>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Dificultad</th>
               </tr>
-            </c:forEach>
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              <c:forEach var="receta" items="${recetas}">
+                <tr>
+                  <td><c:out value="${receta.id}" /></td>
+                  <td><c:out value="${receta.nombre}" /></td>
+                  <td><c:out value="${receta.dificultad}" /></td>
+                </tr>
+              </c:forEach>
+            </tbody>
+          </table>
+        </div>
       </c:otherwise>
     </c:choose>
 
